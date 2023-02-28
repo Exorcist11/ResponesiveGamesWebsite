@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Page</title>
+    <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="nav container">
+            <!-- Logo -->
+            <a href="index.html" class="logo">Game<span>Store</span></a>
+            <!-- Nav Icons -->
+            <div class="nav-icons">
+                <i class='bx bx-bell bx-tada' id="bell-icon"><span></span></i>
+                <i class='bx bxs-download' id="download-icon"></i>
+                <div class="menu-icon">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </div>
+            <div class="menu">
+                <img src="img/menu.png" alt="" srcset="">
+                <div class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#trending">Trending</a></li>
+                    <li><a href="#new">New Games</a></li>
+                    <li><a href="#action">Action Games</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </div>
+            </div>
+            <!-- Notification -->
+            <div class="notification">
+                <div class="notification-box">
+                    <i class='bx bxs-check-circle'></i>
+                    <p>Download successfully.</p>
+                </div>
+                <div class="notification-box box-color">
+                    <i class='bx bxs-x-circle'></i>
+                    <p>Could not apply changes.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="video-container container">
+        <video src="/download-files/Subway Surfers Official.mp4" muted autoplay></video>
+    </div>
+
+    <div class="about container">
+        <h2>About Games</h2>
+        <p>Subway Surfers is an endless runner mobile game co-developed by Kiloo and SYBO Games, private companies based
+            in Denmark. It is available on Android, iOS, HarmonyOS, Kindle, and Windows Phone platforms and uses the
+            Unity game engine. In the game, players take the role of young graffiti artists who, upon being caught in
+            the act of "tagging" a metro railway site, run through the railroad tracks to escape from the inspector and
+            his dog. As they run, they grab gold coins, power-ups, and other items along the way while simultaneously
+            dodging collisions with trains and other objects. They can also jump on top of the trains and surf with
+            hoverboards to evade capture until the character crashes into an obstacle, gets caught by the inspector, or
+            gets hit by a train, at which point the game ends. Special events, such as the Season Hunt, can result in
+            in-game rewards and characters.
+        </p>
+    </div>
+
+    <div class="screenshots container">
+        <h2>ScreenShots</h2>
+        <div class="screenshots-content">
+            <img src="/img/screenshots1.jpg" alt="">
+            <img src="/img/screenshots2.jpg" alt="">
+            <img src="/img/screenshots3.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="download">
+        <h2>Download Links</h2>
+        <div class="download-links">
+            <a href="download-files/Subway Surface.apk" download="">For Android</a>
+            <a href="#">For Ios</a>
+            <a href="#">For Windows</a>
+        </div>
+    </div>
+
+    <footer class="copyright container">
+        <a href="" class="logo">Game<span>Store</span></a>
+        <p>&#169; Exorcist All Right Reserved</p>
+    </footer>
+
+    <script src="script/main.js"></script>
+    <!-- Swiper -->
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+
+        const swiper = new Swiper(".trending-content", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 15,
+                },
+                1068: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>
